@@ -49,12 +49,14 @@ public class Pizza {
     }
 
     public void addExtraToppings(){
-        if(isVeg)
+        if(isVeg) {
             toppings = 70;
-        else
+            price += toppings;
+        }
+        else {
             toppings = 120;
-
-        price += toppings;
+            price += toppings;
+        }
     }
 
     public void addTakeaway(){
