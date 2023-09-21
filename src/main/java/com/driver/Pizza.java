@@ -47,7 +47,7 @@ public class Pizza {
         if(isToppingsAdded == false)
         {
             Price += toppings;
-            isToppingsAdded = false;
+            isToppingsAdded = true;
         }
     }
 
@@ -73,6 +73,8 @@ public class Pizza {
                 bill += "Paperbag Added: " + paperBag + "\n";
 
             bill += "Total Price: " + Price + "\n";
+
+            isBillGenerated = true;
         }
         return this.bill;
     }
